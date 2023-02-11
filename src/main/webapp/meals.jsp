@@ -25,8 +25,8 @@
         <c:forEach var = "meal" items ="${meals}">
             <jsp:useBean id="meal" type="ru.javawebinar.topjava.model.MealTo"/>
         <tr <c:choose>
-            <c:when test="${meal.excess}"> style="color: red" </c:when>
-            <c:otherwise> style="color: green" </c:otherwise>
+            <c:when test="${meal.excess}"> style="color: red; border-color: black" </c:when>
+            <c:otherwise> style="color: green; border-color: black" </c:otherwise>
             </c:choose>  >
                 <td >
                     <c:out value="${meal.dateTime}"/>
